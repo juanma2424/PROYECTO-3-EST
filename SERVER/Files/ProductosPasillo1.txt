@@ -1,0 +1,4 @@
+Lista de productos del pasillo1: 
+
+Codigo: 20	Nombre: Arroz
+Codigo: 34	Nombre: Frijoles

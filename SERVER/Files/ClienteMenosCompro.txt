@@ -1,0 +1,4 @@
+Cliente/s que menos compro: 
+
+Cedula: 1290738    Nombre: Jose Ramirez       Codigo de ciudad: 20     Telefono: 23658911  Correo: jram45@gmail.comCantidad de facturas: 0
+

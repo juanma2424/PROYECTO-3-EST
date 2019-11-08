@@ -1,0 +1,5 @@
+Marca/s mas vendida: 
+
+Codigo marca: 51	Nombre: Luisiana	Cantidad: 4	Precio: 1000
+Cantidad vendida: 20
+

@@ -1,0 +1,14 @@
+Lista del inventario del supermercado: 
+
+Codigo pasillo: 1	Codigo producto: 20	Codigo marca: 51	Nombre: Luisiana	Cantidad en stock: 30	Canasta basica: si.
+
+Codigo pasillo: 1	Codigo producto: 34	Codigo marca: 36	Nombre: Rojitos	Cantidad en stock: 35	Canasta basica: no.
+
+Codigo pasillo: 1	Codigo producto: 20	Codigo marca: 67	Nombre: SalSol	Cantidad en stock: 10	Canasta basica: no.
+
+Codigo pasillo: 4	Codigo producto: 73	Codigo marca: 38	Nombre: CintaAzul	Cantidad en stock: 27	Canasta basica: si.
+
+Codigo pasillo: 15	Codigo producto: 28	Codigo marca: 37	Nombre: Kerns	Cantidad en stock: 16	Canasta basica: no.
+
+Codigo pasillo: 20	Codigo producto: 45	Codigo marca: 67	Nombre: Blanquita	Cantidad en stock: 44	Canasta basica: no.
+

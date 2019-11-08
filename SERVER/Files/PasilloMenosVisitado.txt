@@ -1,0 +1,5 @@
+Pasillos menos visitados: 
+
+Codigo pasillo: 4 Nombre pasillo: Carnes
+Codigo pasillo: 15 Nombre pasillo: Bebidas
+Codigo pasillo: 20 Nombre pasillo: Limpieza

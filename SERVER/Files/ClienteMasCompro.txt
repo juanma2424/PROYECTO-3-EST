@@ -1,0 +1,4 @@
+Cliente/s que mas compro: 
+
+Cedula: 1234567    Nombre: Juan Perez       Codigo de ciudad: 11     Telefono: 23658974  Correo: juanpq@gmail.comCantidad de facturas: 1
+

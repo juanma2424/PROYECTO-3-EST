@@ -1,0 +1,179 @@
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+20		51	 Luisiana	1000.000000	1.000000	20000.000000
+
+Total a pagar: 20000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+20		51	 Luisiana	1000.000000	1.000000	20000.000000
+
+Total a pagar: 20000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+20		51	 Luisiana	1000.000000	1.000000	20000.000000
+
+Total a pagar: 20000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+20		51	 Luisiana	1000.000000	1.000000	20000.000000
+
+Total a pagar: 20000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+20		51	 Luisiana	1000.000000	1.000000	20000.000000
+
+Total a pagar: 20000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+2		51	 Luisiana	1000.000000	1.000000	2000.000000
+
+Total a pagar: 2000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+24		51	 Luisiana	1000.000000	1.000000	24000.000000
+
+Total a pagar: 24000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
+
+Consecutivo: 1
+Cedula del cliente: 1234567
+Nombre: Juan Perez
+Telefono: 23658974
+Cantidad Codigo producto Nombre 	Precio 	Impuesto 	Total 
+23		51	 Luisiana	1000.000000	1.000000	23000.000000
+
+Total a pagar: 23000
+
