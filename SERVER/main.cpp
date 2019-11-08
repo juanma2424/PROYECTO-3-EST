@@ -1,29 +1,24 @@
 #include <QCoreApplication>
 #include "adminmenu.h"
 #include"myserver.h"
+#include "avltree.h"
+#include "avlnode.h"
 
-//int main(){
+int main(){
+
+    return 0;
+}
+
+//int main(int argc, char *argv[])
+//{
+//    QCoreApplication a(argc, argv);
+
 
 //    MyServer Server;
 //    Server.StartServer();
 
-////    adminMenu admM;
-////    admM.shareFiles();
-////    admM.shareLogin();
 
-//    return 0;
+
+//    return a.exec();
 //}
-
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
-
-
-    MyServer Server;
-    Server.StartServer();
-
-
-
-    return a.exec();
-}
 

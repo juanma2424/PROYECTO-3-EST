@@ -61,6 +61,141 @@ void AVLTree::insert(Product *pProduct){
 
 
 
+//----------------------------------------------------------------------------//
+
+
+
+void AVLTree::deleteAVLData(int pData){
+    AVLNode* aux;
+    AVLNode* auxF;
+    AVLNode* auxMaxR;
+    // verifica si el dato existe
+    if(exists(pData)){
+
+        aux = getProduct(pData);// obtenemos el nodo que queremos eliminar
+
+        //si es una hoja
+        if(aux->getLeftSon()==nullptr && aux->getRightSon()==nullptr){
+
+            auxF = getfather(pData);// obtenemos el padre
+
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(nullptr);
+            }else{// si es hijo izq
+                auxF->setLeftSon(nullptr);
+            }
+        }
+        // si tengo hijo izq pero no derecho
+        else if(aux->getLeftSon()!=nullptr && aux->getRightSon()==nullptr){
+            auxF = getfather(pData);// obtenemos el padre
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(aux->getLeftSon());
+            }else{// si es hijo izq
+                auxF->setLeftSon(aux->getLeftSon());
+            }
+        }
+        // si tengo hijo derecho pero no izq
+        else if(aux->getLeftSon()==nullptr &&aux->getRightSon()!=nullptr){
+            auxF = getfather(pData);// obtenemos el padre
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(aux->getRightSon());
+            }else{// si es hijo izq
+                auxF->setLeftSon(aux->getRightSon());
+            }
+        }
+        // SI TENGO HIJOS Y NO SOY LA RAIZ
+        else if(aux->getLeftSon()!=nullptr &&aux->getRightSon()!=nullptr && aux->getProduct()->getCode()!=getRoot()->getProduct()->getCode()){
+            int MaxR;
+            // busco el max R
+            auxMaxR = getMaxR(aux->getLeftSon());
+            // guardo su orientacion
+            MaxR = auxMaxR->getOrientation();
+            // guardo al papa de max R
+            auxF = getfather(auxMaxR->getProduct()->getCode());// obtenemos el padre
+
+            // cambio el nodo
+            aux->getProduct()->setCode(auxMaxR->getProduct()->getCode());
+            aux->getProduct()->setName(auxMaxR->getProduct()->getName());
+
+            if(auxMaxR->getLeftSon()!=nullptr){
+                // cambio el nodo
+                auxMaxR->getProduct()->setCode(auxMaxR->getLeftSon()->getProduct()->getCode());
+                auxMaxR->getProduct()->setName(auxMaxR->getLeftSon()->getProduct()->getName());
+                auxMaxR->setLeftSon(nullptr);
+            }
+            else{
+                auxF->setRightSon(nullptr);
+            }
+        }else{
+            int MaxR;
+            // busco el max R
+            auxMaxR = getMaxR(aux->getLeftSon());
+            // guardo su orientacion
+            MaxR = auxMaxR->getOrientation();
+            // guardo al papa de max R
+            auxF = getfather(auxMaxR->getProduct()->getCode());// obtenemos el padre
+
+            // cambio el nodo
+            aux->getProduct()->setCode(auxMaxR->getProduct()->getCode());
+            aux->getProduct()->setName(auxMaxR->getProduct()->getName());
+
+
+            if(auxMaxR->getLeftSon()!=nullptr){
+                // cambio el nodo
+                auxMaxR->getProduct()->setCode(auxMaxR->getLeftSon()->getProduct()->getCode());
+                auxMaxR->getProduct()->setName(auxMaxR->getLeftSon()->getProduct()->getName());
+                auxMaxR->setLeftSon(nullptr);
+            }
+            else{
+                auxF->setRightSon(nullptr);
+            }
+            setRoot(aux);
+            aux->setOrientation(0);
+        }
+    }
+    else{
+        cout<<"La cedula "<<pData<<" no existe"<<endl;
+    }
+}
+
+
+AVLNode* AVLTree::getMaxR(AVLNode* pData){
+    AVLNode* aux = pData;
+    while(aux->getRightSon()!=nullptr){
+        aux= aux->getRightSon();
+    }
+    return aux;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------//
+
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+
+
+
+//----------------------------------------------------------------------------//
+
+
 //----------------------------ROTACIONES SIMPLES------------------------------//
 
 

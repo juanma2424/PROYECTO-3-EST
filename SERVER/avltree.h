@@ -9,7 +9,8 @@ class AVLTree
 public:
 
     AVLTree();
-
+    //------DELETE---------//
+    void deleteAVLData(int pData);
     //------ADD---------//
     void insert(Product*);
     //----------ROTACIONES-SIMPLES-------//
@@ -42,8 +43,8 @@ public:
     bool exists(int);
     AVLNode* getProduct(int);
     void getProdCL(AVLNode *r);
-
     void print(AVLNode*);
+    AVLNode* getMaxR( AVLNode* pData);
 
 
 private:
