@@ -58,6 +58,126 @@ void RNTree::insert(Brand *pBrand){
     }
 }
 
+
+
+void RNTree::deleteRNData(int pData){
+    RNNode* aux;
+    RNNode* auxF;
+    RNNode* auxMaxR;
+    // verifica si el dato existe
+    if(exists(pData)){
+
+        aux = getBrand(pData);// obtenemos el nodo que queremos eliminar
+
+        //si es una hoja
+        if(aux->getLeftSon()==nullptr && aux->getRightSon()==nullptr){
+
+            auxF = getfather(pData);// obtenemos el padre
+
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(nullptr);
+            }else{// si es hijo izq
+                auxF->setLeftSon(nullptr);
+            }
+        }
+        // si tengo hijo izq pero no derecho
+        else if(aux->getLeftSon()!=nullptr && aux->getRightSon()==nullptr){
+            auxF = getfather(pData);// obtenemos el padre
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(aux->getLeftSon());
+            }else{// si es hijo izq
+                auxF->setLeftSon(aux->getLeftSon());
+            }
+        }
+        // si tengo hijo derecho pero no izq
+        else if(aux->getLeftSon()==nullptr &&aux->getRightSon()!=nullptr){
+            auxF = getfather(pData);// obtenemos el padre
+            // si es hijo derecho
+            if(aux->getOrientation()==1){
+                auxF->setRightSon(aux->getRightSon());
+            }else{// si es hijo izq
+                auxF->setLeftSon(aux->getRightSon());
+            }
+        }
+        // SI TENGO HIJOS Y NO SOY LA RAIZ
+        else if(aux->getLeftSon()!=nullptr &&aux->getRightSon()!=nullptr && aux->getProduct()->getCode()!=getRoot()->getProduct()->getCode()){
+            int MaxR;
+            // busco el max R
+            auxMaxR = getMaxR(aux->getLeftSon());
+            // guardo su orientacion
+            MaxR = auxMaxR->getOrientation();
+            // guardo al papa de max R
+            auxF = getfather(auxMaxR->getBrand()->getCode());// obtenemos el padre
+
+            // cambio el nodo
+            aux->getBrand()->setCode(auxMaxR->getBrand()->getCode());
+            aux->getBrand()->setName(auxMaxR->getBrand()->getName());
+
+
+            if(auxMaxR->getLeftSon()!=nullptr){
+                // cambio el nodo
+                auxMaxR->getBrand()->setCode(auxMaxR->getLeftSon()->getBrand()->getCode());
+                auxMaxR->getBrand()->setName(auxMaxR->getLeftSon()->getBrand()->getName());
+                auxMaxR->setLeftSon(nullptr);
+            }
+            else{
+                auxF->setRightSon(nullptr);
+            }
+        }else{
+            int MaxR;
+            // busco el max R
+            auxMaxR = getMaxR(aux->getLeftSon());
+            // guardo su orientacion
+            MaxR = auxMaxR->getOrientation();
+            // guardo al papa de max R
+            auxF = getfather(auxMaxR->getBrand()->getCode());// obtenemos el padre
+
+            // cambio el nodo
+            aux->getBrand()->setCode(auxMaxR->getBrand()->getCode());
+            aux->getBrand()->setName(auxMaxR->getBrand()->getName());
+
+
+            if(auxMaxR->getLeftSon()!=nullptr){
+                // cambio el nodo
+                auxMaxR->getBrand()->setCode(auxMaxR->getLeftSon()->getBrand()->getCode());
+                auxMaxR->getBrand()->setName(auxMaxR->getLeftSon()->getBrand()->getName());
+                auxMaxR->setLeftSon(nullptr);
+            }
+            else{
+                auxF->setRightSon(nullptr);
+            }
+            setRoot(aux);
+            aux->setOrientation(0);
+        }
+    }
+    else{
+        cout<<"La cedula "<<pData<<" no existe"<<endl;
+    }
+}
+
+
+
+
+
+RNNode* RNTree::getMaxR(RNNode* pData){
+    RNNode* aux = pData;
+    while(aux->getRightSon()!=nullptr){
+        aux= aux->getRightSon();
+    }
+    return aux;
+}
+
+
+
+
+
+
+
+
+
+
 //--------------------------------EVALUADORES------------------------------------------//
 
 //-----------------------------[GOBACK]---------------------------------------------//

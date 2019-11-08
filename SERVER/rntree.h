@@ -9,6 +9,8 @@ class RNTree {
 public:
     library ml;
     RNTree();
+    //------DELETE---------//
+    void deleteRNData(int pData);
     //------ADD---------//
     void insert(Brand*);
     //--------GET-FAMILI-------------------//
@@ -49,6 +51,7 @@ public:
     bool validateBand(RNNode *r, int pData);
     bool validateCant(RNNode *r, int pData);
     int  getMaxCant(RNNode *r, int pData);
+    RNNode* getMaxR(RNNode* pData);
 
 private:
     RNNode * root;
