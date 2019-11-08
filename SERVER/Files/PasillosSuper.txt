@@ -1,0 +1,10 @@
+Lista de pasillo del supermercado: 
+
+Codigo: 1	Nombre: Abarrotes
+
+Codigo: 4	Nombre: Carnes
+
+Codigo: 15	Nombre: Bebidas
+
+Codigo: 20	Nombre: Limpieza
+

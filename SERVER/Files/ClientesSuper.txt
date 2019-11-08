@@ -1,0 +1,4 @@
+Lista de clientes del supermercado: 
+
+Cedula: 1234567    Nombre: Juan Perez       Codigo de ciudad: 11     Telefono: 23658974  Correo: juanpq@gmail.com
+Cedula: 1290738    Nombre: Jose Ramirez       Codigo de ciudad: 20     Telefono: 23658911  Correo: jram45@gmail.com
