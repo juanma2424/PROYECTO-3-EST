@@ -1,0 +1,4 @@
+Marca/s de un producto: 
+
+Cod Marca: 51  Nombre : Luisiana
+Cod Marca: 67  Nombre : SalSol
