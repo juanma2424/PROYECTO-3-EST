@@ -72,7 +72,9 @@ void AVLTree::deleteAVLData(int pData){
     // verifica si el dato existe
     if(exists(pData)){
 
+
         aux = getProduct(pData);// obtenemos el nodo que queremos eliminar
+
 
         //si es una hoja
         if(aux->getLeftSon()==nullptr && aux->getRightSon()==nullptr){
@@ -127,8 +129,11 @@ void AVLTree::deleteAVLData(int pData){
                 auxMaxR->setLeftSon(nullptr);
             }
             else{
-                auxF->setRightSon(nullptr);
+                auxF->setLeftSon(nullptr);
+                auxF->setLeftSon(nullptr);
             }
+
+           // goback(aux);
         }else{
             int MaxR;
             // busco el max R
@@ -155,9 +160,10 @@ void AVLTree::deleteAVLData(int pData){
             setRoot(aux);
             aux->setOrientation(0);
         }
+       showGoback(aux);
     }
     else{
-        cout<<"La cedula "<<pData<<" no existe"<<endl;
+        cout<<"El dato "<<pData<<" no existe"<<endl;
     }
 }
 
@@ -621,6 +627,18 @@ void AVLTree::show(AVLNode* pData) {
         cout << getProfM(pData) << "] -> ";
         cout << endl;
         show(pData->getRightSon());
+    }
+}
+
+
+
+void AVLTree::showGoback(AVLNode * pData) {
+    if (pData == nullptr) {
+        return;
+    } else {
+        showGoback(pData->getLeftSon());
+        goback(pData);
+        showGoback(pData->getRightSon());
     }
 }
 

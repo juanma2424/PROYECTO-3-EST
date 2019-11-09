@@ -102,7 +102,7 @@ void RNTree::deleteRNData(int pData){
             }
         }
         // SI TENGO HIJOS Y NO SOY LA RAIZ
-        else if(aux->getLeftSon()!=nullptr &&aux->getRightSon()!=nullptr && aux->getProduct()->getCode()!=getRoot()->getProduct()->getCode()){
+        else if(aux->getLeftSon()!=nullptr &&aux->getRightSon()!=nullptr && aux->getBrand()->getCode()!=getRoot()->getBrand()->getCode()){
             int MaxR;
             // busco el max R
             auxMaxR = getMaxR(aux->getLeftSon());
@@ -123,7 +123,8 @@ void RNTree::deleteRNData(int pData){
                 auxMaxR->setLeftSon(nullptr);
             }
             else{
-                auxF->setRightSon(nullptr);
+                auxF->setLeftSon(nullptr);
+                auxF->setLeftSon(nullptr);
             }
         }else{
             int MaxR;
@@ -151,6 +152,7 @@ void RNTree::deleteRNData(int pData){
             setRoot(aux);
             aux->setOrientation(0);
         }
+      showGoback(aux);
     }
     else{
         cout<<"La cedula "<<pData<<" no existe"<<endl;
@@ -169,7 +171,15 @@ RNNode* RNTree::getMaxR(RNNode* pData){
     return aux;
 }
 
-
+void RNTree::showGoback(RNNode * pData) {
+    if (pData == nullptr) {
+        return;
+    } else {
+        showGoback(pData->getLeftSon());
+        goback(pData);
+        showGoback(pData->getRightSon());
+    }
+}
 
 
 

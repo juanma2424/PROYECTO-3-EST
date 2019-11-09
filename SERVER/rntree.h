@@ -52,6 +52,7 @@ public:
     bool validateCant(RNNode *r, int pData);
     int  getMaxCant(RNNode *r, int pData);
     RNNode* getMaxR(RNNode* pData);
+    void showGoback(RNNode* pData);
 
 private:
     RNNode * root;

@@ -45,6 +45,7 @@ public:
     void getProdCL(AVLNode *r);
     void print(AVLNode*);
     AVLNode* getMaxR( AVLNode* pData);
+    void showGoback(AVLNode* pData);
 
 
 private:
